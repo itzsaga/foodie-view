@@ -11,7 +11,7 @@ import createHistory from 'history/createBrowserHistory'
 
 // Components
 import Main from './components/Main'
-import YelpList from './components/YelpList'
+import YelpList from './components/RestaurantList'
 import YelpShow from './components/YelpShow'
 
 // Reducer
