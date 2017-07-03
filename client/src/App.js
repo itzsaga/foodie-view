@@ -23,7 +23,8 @@ import restaurants from './data/restaurants'
 import comments from './data/comments'
 
 const defaultState = {
-  comments
+  comments,
+  restaurants
 }
 
 const history = createHistory()
