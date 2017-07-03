@@ -4,15 +4,13 @@ import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import * as actionCreators from '../actions/actionCreators'
 
-import '../styles/lists.css'
-
 import Restaurant from './Restaurant'
 
 class RestaurantList extends Component {
   render () {
     return (
-      <div className='restaurant-list'>
-        {this.props.restaurants.businesses.map((restaurant, i) => <Restaurant />)}
+      <div className='list'>
+        {this.props.restaurants.businesses.map((restaurant, i) => <Restaurant {...this.props} key={i} i={restaurant.id} restaurant={restaurant} />)}
       </div>
     )
   }
