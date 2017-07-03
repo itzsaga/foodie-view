@@ -5,7 +5,7 @@ export default class RestaurantList extends Component {
   render () {
     return (
       <div className='yelp-list'>
-        <p>I'm the Yelp List.</p>
+        <p>I'm the List.</p>
       </div>
     )
   }

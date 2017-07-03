@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const Main = () =>
+const Home = () =>
   <div>
     <h2>Welcome to Foodie View!</h2>
     <h3>Choose an option below to discuss places around you.</h3>
@@ -10,4 +10,4 @@ const Main = () =>
     </ul>
   </div>
 
-export default Main
+export default Home

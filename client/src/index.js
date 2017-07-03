@@ -2,13 +2,14 @@
 import React from 'react'
 import { createStore, compose } from 'redux'
 import { Provider } from 'react-redux'
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import { Router, Route, Link } from 'react-router-dom'
 import { render } from 'react-dom'
 import createHistory from 'history/createBrowserHistory'
 import thunk from 'redux-thunk'
 
 // Components
-import Main from './components/Main'
+import App from './components/App'
+import Home from './components/Home'
 import RestaurantList from './components/RestaurantList'
 import RestaurantShow from './components/RestaurantShow'
 
@@ -37,14 +38,11 @@ const store = createStore(rootReducer, defaultState, window.devToolsExtension ? 
 render(
   <Provider store={store}>
     <Router history={history}>
-      <div>
-        <Link to='/'>
-          <h1 className='title'>Foodie View</h1>
-        </Link>
-        <Route exact path='/' component={Main} />
+      <App>
+        <Route exact path='/' component={Home} />
         <Route exact path='/restaurants' component={RestaurantList} />
-        <Route path='/restaurants/:id' component={RestaurantShow} />
-      </div>
+        <Route exact path='/restaurants/:id' component={RestaurantShow} />
+      </App>
     </Router>
   </Provider>,
   document.getElementById('root')
