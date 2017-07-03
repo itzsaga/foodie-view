@@ -1,5 +1,11 @@
 // React stuff
 import React from 'react'
+
+// Redux
+import { createStore, compose } from 'redux'
+import { syncHistoryWithStore } from 'react-router-redux'
+
+// React Router
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import createHistory from 'history/createBrowserHistory'
 
@@ -8,11 +14,25 @@ import Main from './components/Main'
 import YelpList from './components/YelpList'
 import YelpShow from './components/YelpShow'
 
+// Reducer
+import rootReducer from './reducers/index'
+
 // CSS
 import 'mini.css'
 import './styles/title.css'
 
-const history = createHistory()
+// Mock data
+import restaurants from './data/restaurants'
+import comments from './data/comments'
+
+const defaultState = {
+  restaurants,
+  comments
+}
+
+const history = syncHistoryWithStore(createHistory())
+
+const store = createStore(rootReducer, defaultState)
 
 export const App = () => {
   return (
