@@ -11,7 +11,7 @@ import thunk from 'redux-thunk'
 import App from './components/App'
 import Home from './components/Home'
 import RestaurantList from './components/RestaurantList'
-import RestaurantShow from './components/RestaurantShow'
+import Single from './components/Single'
 
 // Reducer
 import rootReducer from './reducers/index'
@@ -42,7 +42,7 @@ render(
       <App>
         <Route exact path='/' component={Home} />
         <Route exact path='/restaurants' component={RestaurantList} />
-        <Route exact path='/restaurants/:id' component={RestaurantShow} />
+        <Route exact path='/restaurants/:id' component={Single} />
       </App>
     </Router>
   </Provider>,
