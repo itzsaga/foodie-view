@@ -1,18 +1,9 @@
-import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react'
 
-import '../styles/main.css'
-
-class Main extends Component {
-  render () {
-    return (
-      <div>
-        <h1 className='title'>
-          Foodie View
-        </h1>
-      </div>
-    )
-  }
-}
+const Main = () =>
+  <div>
+    <h3>Welcome to Foodie View!</h3>
+    <p>Search below to discuss places around you!</p>
+  </div>
 
 export default Main
