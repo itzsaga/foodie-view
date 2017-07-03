@@ -4,7 +4,7 @@ import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import * as actionCreators from '../actions/actionCreators'
 
-import '../styles/restaurantList.css'
+import '../styles/lists.css'
 
 import Restaurant from './Restaurant'
 
