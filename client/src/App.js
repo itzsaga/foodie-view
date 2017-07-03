@@ -11,8 +11,8 @@ import createHistory from 'history/createBrowserHistory'
 
 // Components
 import Main from './components/Main'
-import YelpList from './components/RestaurantList'
-import YelpShow from './components/RestaurantShow'
+import RestaurantList from './components/RestaurantList'
+import RestaurantShow from './components/RestaurantShow'
 
 // Reducer
 import rootReducer from './reducers/index'
@@ -42,8 +42,8 @@ export const App = () => {
             <h1 className='title'>Foodie View</h1>
           </Link>
           <Route exact path='/' component={Main} />
-          <Route exact path='/restaurants' component={YelpList} />
-          <Route path='/restaurants/:id' component={YelpShow} />
+          <Route exact path='/restaurants' component={RestaurantList} />
+          <Route path='/restaurants/:id' component={RestaurantShow} />
         </div>
       </Router>
     </Provider>
