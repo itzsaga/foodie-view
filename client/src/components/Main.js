@@ -1,9 +1,13 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Main = () =>
   <div>
-    <h3>Welcome to Foodie View!</h3>
-    <p>Search below to discuss places around you!</p>
+    <h2>Welcome to Foodie View!</h2>
+    <h3>Choose an option below to discuss places around you.</h3>
+    <ul>
+      <li><Link to='/restaurants'>Restaurants</Link></li>
+    </ul>
   </div>
 
 export default Main
