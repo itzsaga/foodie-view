@@ -35,16 +35,18 @@ const store = createStore(rootReducer, defaultState)
 
 export const App = () => {
   return (
-    <Router history={history}>
-      <div>
-        <Link to='/'>
-          <h1 className='title'>Foodie View</h1>
-        </Link>
-        <Route exact path='/' component={Main} />
-        <Route exact path='/restaurants' component={YelpList} />
-        <Route path='/restaurants/:id' component={YelpShow} />
-      </div>
-    </Router>
+    <Provider store={store}>
+      <Router history={history}>
+        <div>
+          <Link to='/'>
+            <h1 className='title'>Foodie View</h1>
+          </Link>
+          <Route exact path='/' component={Main} />
+          <Route exact path='/restaurants' component={YelpList} />
+          <Route path='/restaurants/:id' component={YelpShow} />
+        </div>
+      </Router>
+    </Provider>
   )
 }
 
