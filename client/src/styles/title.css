@@ -1,7 +1,13 @@
 @import 'fonts.css';
 
-.title {
-    display: flex;
-    justify-content: center;
-    font: bold 76px/1 'Amatic SC', cursive;
+h1.title {
+    font: bold 8em/1 'Amatic SC', cursive;
+    text-align: center;
+    background-color: orange;
+    color: black;
+    border-radius: 25px;
+}
+
+a {
+    text-decoration: none;
 }

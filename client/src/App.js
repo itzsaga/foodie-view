@@ -1,6 +1,6 @@
 // React stuff
 import React from 'react'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import createHistory from 'history/createBrowserHistory'
 
 // Components
@@ -18,7 +18,9 @@ export const App = () => {
   return (
     <Router history={history}>
       <div>
-        <h1 className='title'>Foodie View</h1>
+        <Link to='/'>
+          <h1 className='title'>Foodie View</h1>
+        </Link>
         <Route exact path='/' component={Main} />
         <Route exact path='/list' component={YelpList} />
         <Route exact path='/view/:id' component={YelpShow} />
