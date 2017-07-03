@@ -1,7 +1,0 @@
-@import 'fonts.css';
-
-.title {
-    display: flex;
-    justify-content: center;
-    font: bold 76px/1 'Amatic SC', cursive;
-}
