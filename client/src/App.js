@@ -22,8 +22,8 @@ export const App = () => {
           <h1 className='title'>Foodie View</h1>
         </Link>
         <Route exact path='/' component={Main} />
-        <Route exact path='/list' component={YelpList} />
-        <Route exact path='/view/:id' component={YelpShow} />
+        <Route exact path='/restaurants' component={YelpList} />
+        <Route path='/restaurants/:id' component={YelpShow} />
       </div>
     </Router>
   )
