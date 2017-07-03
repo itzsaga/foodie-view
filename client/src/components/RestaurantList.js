@@ -4,12 +4,13 @@ import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import * as actionCreators from '../actions/actionCreators'
 
+import Restaurant from './Restaurant'
+
 class RestaurantList extends Component {
   render () {
     return (
-      <div className='yelp-list'>
-        <p>I'm the List.</p>
-        {JSON.stringify(this.props.restaurants,null,' ')}
+      <div className='restaurant-list'>
+        {this.props.restaurants.businesses.map((restaurant, i) => <Restaurant />)}
       </div>
     )
   }
