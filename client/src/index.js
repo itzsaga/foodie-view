@@ -18,6 +18,7 @@ import rootReducer from './reducers/index'
 
 // CSS
 import 'mini.css'
+import 'normalize.css'
 import './styles/css.css'
 
 // Mock data
