@@ -18,7 +18,7 @@ import rootReducer from './reducers/index'
 
 // CSS
 import 'mini.css'
-import './styles/title.css'
+import './styles/css.css'
 
 // Mock data
 import restaurants from './data/restaurants'
