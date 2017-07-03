@@ -3,7 +3,7 @@ import React from 'react'
 
 // Redux
 import { createStore, compose } from 'redux'
-import { syncHistoryWithStore } from 'react-router-redux'
+// import { syncHistoryWithStore } from 'react-router-redux'
 
 // React Router
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
@@ -15,7 +15,7 @@ import YelpList from './components/YelpList'
 import YelpShow from './components/YelpShow'
 
 // Reducer
-import rootReducer from './reducers/index'
+// import rootReducer from './reducers/index'
 
 // CSS
 import 'mini.css'
@@ -30,9 +30,9 @@ const defaultState = {
   comments
 }
 
-const history = syncHistoryWithStore(createHistory())
+const history = createHistory()
 
-const store = createStore(rootReducer, defaultState)
+// const store = createStore(rootReducer, defaultState)
 
 export const App = () => {
   return (
