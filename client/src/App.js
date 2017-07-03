@@ -1,13 +1,10 @@
-// React stuff
+// React & Redux stuff
 import React from 'react'
-
-// Redux
 import { createStore, compose } from 'redux'
 import { Provider } from 'react-redux'
-
-// React Router
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import createHistory from 'history/createBrowserHistory'
+import thunk from 'redux-thunk'
 
 // Components
 import Main from './components/Main'
@@ -31,7 +28,7 @@ const defaultState = {
 
 const history = createHistory()
 
-const store = createStore(rootReducer, defaultState)
+const store = createStore(rootReducer, defaultState, window.devToolsExtension ? window.devToolsExtension() : f => f)
 
 export const App = () => {
   return (
