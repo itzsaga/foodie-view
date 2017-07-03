@@ -5,7 +5,7 @@ export default class YelpShow extends Component {
   render () {
     return (
       <div className='yelp-show'>
-        I'm the Yelp Show.
+        <p>I'm the Yelp Show.</p>
       </div>
     )
   }
