@@ -1,7 +1,14 @@
 import React, { Component } from 'react'
+import { withRouter } from 'react-router-dom'
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
+import * as actionCreators from '../actions/actionCreators'
 
 class App extends Component {
+  componentWillMount () {
+    this.props.actionCreators.fetchPlaces()
+  }
   render () {
     return (
       <div>
@@ -12,4 +19,15 @@ class App extends Component {
   }
 }
 
-export default App
+function mapStateToProps (state) {
+  return {
+    restaurants: state.restaurants,
+    comments: state.comments
+  }
+}
+
+function mapDispatchToProps (dispatch) {
+  return { actionCreators: bindActionCreators(actionCreators, dispatch) }
+}
+
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App))
