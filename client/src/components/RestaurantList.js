@@ -7,9 +7,18 @@ import Restaurant from './Restaurant'
 
 class RestaurantList extends Component {
   render () {
+    let list
+    const { restaurants } = this.props.places
+    console.log(restaurants)
+    if (restaurants) {
+      list =
+        restaurants.map((r, i) => <Restaurant {...this.props} key={i} i={r.id} restaurant={r} />)
+    } else {
+      list = <p>Loading...</p>
+    }
     return (
       <div className='list'>
-        {/*{this.props.places.restaurants.map((restaurant, i) => <Restaurant {...this.props} key={i} i={restaurant.id} restaurant={restaurant} />)}*/}
+        {list}
       </div>
     )
   }
