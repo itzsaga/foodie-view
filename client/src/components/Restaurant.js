@@ -1,8 +1,6 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 
-// class Restaurant extends Component {
-//   render () {
 export default (props) => {
   const { restaurant, comments } = props
   return (
@@ -27,6 +25,3 @@ export default (props) => {
     </figure>
   )
 }
-// }
-
-// export default Restaurant
