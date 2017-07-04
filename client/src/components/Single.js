@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { withRouter } from 'react-router-dom'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import * as actionCreators from '../actions/actionCreators'
@@ -9,14 +10,25 @@ import Comments from './Comments'
 
 class Single extends Component {
   render () {
-    const { id } = this.props.match.params
-    const i = this.props.places.findIndex((restaurant) => restaurant.id === id)
-    const restaurant = this.props.places[i]
-    const restaurantComments = this.props.comments[id] || []
+    let single
+    if (this.props.places.restaurants) {
+      const { id } = this.props.match.params
+      const i = this.props.places.restaurants.findIndex((r) => r.place_id === id)
+      const restaurant = this.props.places.restaurants[i]
+      const restaurantComments = this.props.comments[id] || []
+      single =
+        <div className="single">
+          <Restaurant i={i} restaurant={restaurant} {...this.props} />
+          <Comments restaurantComments={restaurantComments} {...this.props} />
+        </div>
+    } else {
+      <div className="single">
+        single = <p>Loading...</p>
+      </div>
+    }
     return (
-      <div className='single'>
-        <Restaurant i={i} restaurant={restaurant} {...this.props} />
-        <Comments restaurantComments={restaurantComments} {...this.props} />
+      <div>
+        {single}
       </div>
     )
   }
@@ -33,4 +45,4 @@ function mapDispatchToProps (dispatch) {
   return bindActionCreators(actionCreators, dispatch)
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Single)
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Single))
