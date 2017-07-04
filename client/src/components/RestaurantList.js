@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { withRouter } from 'react-router-dom'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import * as actionCreators from '../actions/actionCreators'
@@ -10,7 +9,7 @@ class RestaurantList extends Component {
   render () {
     return (
       <div className='list'>
-        {this.props.restaurants.businesses.map((restaurant, i) => <Restaurant {...this.props} key={i} i={restaurant.id} restaurant={restaurant} />)}
+        {/*{this.props.places.restaurants.map((restaurant, i) => <Restaurant {...this.props} key={i} i={restaurant.id} restaurant={restaurant} />)}*/}
       </div>
     )
   }
@@ -18,7 +17,7 @@ class RestaurantList extends Component {
 
 function mapStateToProps (state) {
   return {
-    restaurants: state.restaurants,
+    places: state.places,
     comments: state.comments
   }
 }
@@ -27,4 +26,4 @@ function mapDispatchToProps (dispatch) {
   return { actionCreators: bindActionCreators(actionCreators, dispatch) }
 }
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(RestaurantList))
+export default connect(mapStateToProps, mapDispatchToProps)(RestaurantList)
