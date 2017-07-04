@@ -2,7 +2,7 @@
 import React from 'react'
 import { createStore, compose } from 'redux'
 import { Provider } from 'react-redux'
-import { Router, Route, Link } from 'react-router-dom'
+import { Router, Route } from 'react-router-dom'
 import { render } from 'react-dom'
 import createHistory from 'history/createBrowserHistory'
 import thunk from 'redux-thunk'
