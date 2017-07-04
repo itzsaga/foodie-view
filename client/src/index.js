@@ -27,7 +27,7 @@ const store = createStore(
   rootReducer,
   compose(
     applyMiddleware(thunk),
-    // autoRehydrate(),
+    autoRehydrate(),
     window.devToolsExtension ? window.devToolsExtension() : f => f
   )
 )
@@ -45,4 +45,4 @@ render(
   document.getElementById('root')
 )
 
-// persistStore(store)
+persistStore(store)
