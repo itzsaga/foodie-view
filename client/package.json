@@ -2,8 +2,11 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:3001/",
   "dependencies": {
+    "es6-promise": "^4.1.1",
     "history": "^4.6.3",
+    "isomorphic-fetch": "^2.2.1",
     "normalize.css": "^7.0.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
