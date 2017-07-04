@@ -1,11 +1,3 @@
-// increment
-export function increment (itemId) {
-  return {
-    type: 'INCREMENT_LIKES',
-    itemId
-  }
-}
-
 // add comment
 export function addComment (id, author, comment) {
   return {
