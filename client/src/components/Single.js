@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { withRouter } from 'react-router-dom'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import * as actionCreators from '../actions/actionCreators'
@@ -11,8 +10,8 @@ import Comments from './Comments'
 class Single extends Component {
   render () {
     const { id } = this.props.match.params
-    const i = this.props.restaurants.businesses.findIndex((restaurant) => restaurant.id === id)
-    const restaurant = this.props.restaurants.businesses[i]
+    const i = this.props.places.findIndex((restaurant) => restaurant.id === id)
+    const restaurant = this.props.places[i]
     const restaurantComments = this.props.comments[id] || []
     return (
       <div className='single'>
@@ -25,7 +24,7 @@ class Single extends Component {
 
 function mapStateToProps (state) {
   return {
-    restaurants: state.restaurants,
+    places: state.places,
     comments: state.comments
   }
 }
@@ -34,4 +33,4 @@ function mapDispatchToProps (dispatch) {
   return bindActionCreators(actionCreators, dispatch)
 }
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Single))
+export default connect(mapStateToProps, mapDispatchToProps)(Single)
