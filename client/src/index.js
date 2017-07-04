@@ -4,6 +4,7 @@ import { createStore, compose, applyMiddleware } from 'redux'
 import { Provider } from 'react-redux'
 import { Router, Route } from 'react-router-dom'
 import { render } from 'react-dom'
+import {persistStore, autoRehydrate} from 'redux-persist'
 import createHistory from 'history/createBrowserHistory'
 import thunk from 'redux-thunk'
 
@@ -33,11 +34,13 @@ const history = createHistory()
 
 const store = createStore(
   rootReducer,
-  // compose(applyMiddleware(thunk),
   defaultState,
-  window.devToolsExtension ? window.devToolsExtension() : f => f
+  compose(
+    applyMiddleware(thunk),
+    autoRehydrate(),
+    window.devToolsExtension ? window.devToolsExtension() : f => f
+  )
 )
-// )
 
 render(
   <Provider store={store}>
@@ -51,3 +54,5 @@ render(
   </Provider>,
   document.getElementById('root')
 )
+
+persistStore(store)
