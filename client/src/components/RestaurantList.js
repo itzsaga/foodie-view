@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
+import { withRouter } from 'react-router-dom'
 import * as actionCreators from '../actions/actionCreators'
 
 import Restaurant from './Restaurant'
@@ -35,4 +36,4 @@ function mapDispatchToProps (dispatch) {
   return { actionCreators: bindActionCreators(actionCreators, dispatch) }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(RestaurantList)
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(RestaurantList))
