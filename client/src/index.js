@@ -1,6 +1,6 @@
 // React & Redux stuff
 import React from 'react'
-import { createStore, compose } from 'redux'
+import { createStore, compose, applyMiddleware } from 'redux'
 import { Provider } from 'react-redux'
 import { Router, Route } from 'react-router-dom'
 import { render } from 'react-dom'
@@ -24,8 +24,6 @@ import './styles/css.css'
 import restaurants from './data/restaurants'
 import comments from './data/comments'
 
-import registerServiceWorker from './registerServiceWorker'
-
 const defaultState = {
   comments,
   restaurants
@@ -33,7 +31,13 @@ const defaultState = {
 
 const history = createHistory()
 
-const store = createStore(rootReducer, defaultState, window.devToolsExtension ? window.devToolsExtension() : f => f)
+const store = createStore(
+  rootReducer,
+  // compose(applyMiddleware(thunk),
+  defaultState,
+  window.devToolsExtension ? window.devToolsExtension() : f => f
+)
+// )
 
 render(
   <Provider store={store}>
@@ -47,4 +51,3 @@ render(
   </Provider>,
   document.getElementById('root')
 )
-registerServiceWorker()

@@ -16,3 +16,7 @@ export function removeComment (id, i) {
     i
   }
 }
+
+// Comments fetch
+
+// Restaurants Fetch
