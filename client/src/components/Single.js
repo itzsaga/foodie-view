@@ -17,13 +17,13 @@ class Single extends Component {
       const restaurant = this.props.places.restaurants[i]
       const restaurantComments = this.props.comments[id] || []
       single =
-        <div className="single">
+        <div className='single'>
           <Restaurant i={i} restaurant={restaurant} {...this.props} />
           <Comments restaurantComments={restaurantComments} {...this.props} />
         </div>
     } else {
-      <div className="single">
-        single = <p>Loading...</p>
+      single = <div className='single'>
+        <p>Loading...</p>
       </div>
     }
     return (
