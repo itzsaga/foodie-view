@@ -1,7 +1,7 @@
 import fetch from 'isomorphic-fetch'
 
 // add comment
-export function addComment (id, author, comment) {
+function addComment (id, author, comment) {
   return {
     type: 'ADD_COMMENT',
     id,
@@ -11,7 +11,7 @@ export function addComment (id, author, comment) {
 }
 
 // remove comment
-export function removeComment (id, i) {
+function removeComment (id, i) {
   return {
     type: 'REMOVE_COMMENT',
     id,
@@ -20,14 +20,24 @@ export function removeComment (id, i) {
 }
 
 // fetch places
-export function fetchPlaces () {
-  console.log('fetching places')
+function fetchPlaces () {
   return (dispatch) => {
-    dispatch({type: 'LOADING_PLACES'})
-    return fetch('/places')
-      .then(response => response.JSON)
-      .then(responseJSON => {
-        dispatch({type: 'FETCH_PLACES', payload: responseJSON})
+    dispatch({type: 'FETCH_PLACES'})
+    return fetch('http://localhost:3001/api/places')
+      .then(response => {
+        response.json()
+        .then(json => {
+          dispatch({type: 'RECEIVED_PLACES', payload: json})
+        })
+      })
+      .catch((err) => {
+        dispatch({type: 'FETCH_PLACES_ERROR', payload: err})
       })
   }
+}
+
+export {
+  addComment,
+  removeComment,
+  fetchPlaces
 }
