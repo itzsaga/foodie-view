@@ -3,8 +3,9 @@ import { Link } from 'react-router-dom'
 
 export default (props) => {
   const { restaurant, comments } = props
-  return (
-    <figure className='grid-figure'>
+  let show
+  if (restaurant) {
+    show = <div>
       <div className='grid-photo-wrap'>
         <Link to={`/restaurants/${restaurant.place_id}`}>
           <img src={`${restaurant.image_url}`} alt={restaurant.name} className='grid-photo' />
@@ -22,6 +23,14 @@ export default (props) => {
           </Link>
         </div>
       </figcaption>
+    </div>
+  } else {
+    show = <p>Loading...</p>
+  }
+  console.log(restaurant)
+  return (
+    <figure className='grid-figure'>
+      {show}
     </figure>
   )
 }
