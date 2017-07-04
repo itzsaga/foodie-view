@@ -21,23 +21,13 @@ import rootReducer from './reducers/index'
 import 'normalize.css'
 import './styles/css.css'
 
-// Mock data
-import restaurants from './data/restaurants'
-import comments from './data/comments'
-
-const defaultState = {
-  comments,
-  restaurants
-}
-
 const history = createHistory()
 
 const store = createStore(
   rootReducer,
-  defaultState,
   compose(
     applyMiddleware(thunk),
-    autoRehydrate(),
+    // autoRehydrate(),
     window.devToolsExtension ? window.devToolsExtension() : f => f
   )
 )
@@ -55,4 +45,4 @@ render(
   document.getElementById('root')
 )
 
-persistStore(store)
+// persistStore(store)
