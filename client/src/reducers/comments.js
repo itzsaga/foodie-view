@@ -1,3 +1,5 @@
+// TODO: Implement 'REMOVE_COMMENT'
+
 function restaurantComments (state = [], action) {
   switch (action.type) {
     case 'ADD_COMMENT':
@@ -5,8 +7,9 @@ function restaurantComments (state = [], action) {
         user: action.author,
         text: action.comment
       }]
-    case 'REMOVE_COMMENT':
-      return state
+    // case 'REMOVE_COMMENT':
+    //   console.log('Removing a comment.')
+    //   return state
     default:
       return state
   }
