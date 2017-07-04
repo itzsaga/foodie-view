@@ -3,11 +3,11 @@ import React from 'react'
 class Comments extends React.Component {
   renderComment (comment, i) {
     return (
-      <div className="comment" key={i}>
+      <div className='comment' key={i}>
         <p>
           <strong>{comment.user}</strong>
           {comment.text}
-          <button className="remove-comment">&times;</button>
+          <button className='remove-comment'>&times;</button>
         </p>
       </div>
     )
@@ -16,6 +16,11 @@ class Comments extends React.Component {
     return (
       <div className='comments'>
         {this.props.restaurantComments.map(this.renderComment)}
+        <form ref='commentForm' className='comment-form'>
+          <input type='text' ref='author' placeholder='author' />
+          <input type='text' ref='comment' placeholder='comment' />
+          <input type='submit' hidden />
+        </form>
       </div>
     )
   }
