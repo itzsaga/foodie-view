@@ -6,7 +6,7 @@ export default (props) => {
   return (
     <figure className='grid-figure'>
       <div className='grid-photo-wrap'>
-        <Link to={`/restaurants/${restaurant.id}`}>
+        <Link to={`/restaurants/${restaurant.place_id}`}>
           <img src={`${restaurant.image_url}`} alt={restaurant.name} className='grid-photo' />
         </Link>
       </div>
@@ -14,10 +14,10 @@ export default (props) => {
       <figcaption>
         <p>{restaurant.name}</p>
         <div className='control-buttons'>
-          <Link className='button' to={`/restaurants/${restaurant.id}`}>
+          <Link className='button' to={`/restaurants/${restaurant.place_id}`}>
             <span className='comment-count'>
               <span className='speech-bubble' />
-              <span> {comments[restaurant.id] ? comments[restaurant.id].length : 0 }</span>
+              <span> {comments[restaurant.place_id] ? comments[restaurant.place_id].length : 0 }</span>
             </span>
           </Link>
         </div>
