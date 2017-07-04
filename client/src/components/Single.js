@@ -3,7 +3,10 @@ import { withRouter } from 'react-router-dom'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import * as actionCreators from '../actions/actionCreators'
+
+// Components
 import Restaurant from './Restaurant'
+import Comments from './Comments'
 
 class Single extends Component {
   render () {
@@ -13,6 +16,7 @@ class Single extends Component {
     return (
       <div className='single'>
         <Restaurant i={i} restaurant={restaurant} {...this.props} />
+        <Comments />
       </div>
     )
   }
