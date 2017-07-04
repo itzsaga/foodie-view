@@ -17,7 +17,7 @@ class Single extends Component {
     return (
       <div className='single'>
         <Restaurant i={i} restaurant={restaurant} {...this.props} />
-        <Comments restaurantComments={restaurantComments} />
+        <Comments restaurantComments={restaurantComments} {...this.props} />
       </div>
     )
   }
