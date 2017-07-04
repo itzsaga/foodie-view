@@ -17,7 +17,7 @@ class Comments extends React.Component {
     const { id } = this.props.match.params
     const author = this.refs.author.value
     const comment = this.refs.comment.value
-    console.log(id, author, comment)
+    this.props.addComment(id, author, comment)
   }
   render () {
     return (

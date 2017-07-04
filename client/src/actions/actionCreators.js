@@ -7,10 +7,10 @@ export function increment (itemId) {
 }
 
 // add comment
-export function addComment (itemId, author, comment) {
+export function addComment (id, author, comment) {
   return {
     type: 'ADD_COMMENT',
-    itemId,
+    id,
     author,
     comment
   }
