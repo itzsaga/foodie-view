@@ -24,7 +24,7 @@ function mapStateToProps (state) {
 }
 
 function mapDispatchToProps (dispatch) {
-  return bindActionCreators(actionCreators, dispatch)
+  return { actionCreators: bindActionCreators(actionCreators, dispatch) }
 }
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(RestaurantList))
