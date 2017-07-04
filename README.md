@@ -1,24 +1,31 @@
-# README
+# Foodie View #
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This app is written in React utilizing Redux to maintain the state. It is built on a Rails back end setup to serve as an API end point.
 
-Things you may want to cover:
+## Usage ##
 
-* Ruby version
+Load the app then navigate to an item that you want to discuss with others. Leave comments on individual items and see what others have to say in response.
 
-* System dependencies
+## Installation ##
 
-* Configuration
+```shell
+git clone git@github.com:itzsaga/foodie-view.git
+cd foodie-view
+bundle install
+rails db:create
+rails db:migrate
+rails db:seed
+cd client
+npm install
+```
 
-* Database creation
+Then `rake start` to start both servers.
 
-* Database initialization
+## Contributing ##
 
-* How to run the test suite
+Bug reports and pull requests are welcome on GitHub at https://github.com/itzsaga/foodie-view. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](https://github.com/itzsaga/my-fave-food/blob/master/CONTRIBUTING.md) code of conduct.
 
-* Services (job queues, cache servers, search engines, etc.)
+## License ##
 
-* Deployment instructions
+The app is available as open source under the terms of the [MIT License](https://github.com/itzsaga/foodie-view/blob/master/LICENSE).
 
-* ...
