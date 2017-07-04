@@ -17,7 +17,7 @@ import Single from './components/Single'
 import rootReducer from './reducers/index'
 
 // CSS
-import 'mini.css'
+// import 'mini.css'
 import 'normalize.css'
 import './styles/css.css'
 
