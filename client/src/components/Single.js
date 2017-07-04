@@ -10,13 +10,14 @@ import Comments from './Comments'
 
 class Single extends Component {
   render () {
-    const i = this.props.restaurants.businesses.findIndex((restaurant) => restaurant.id === this.props.match.params.id)
+    const { id } = this.props.match.params
+    const i = this.props.restaurants.businesses.findIndex((restaurant) => restaurant.id === id)
     const restaurant = this.props.restaurants.businesses[i]
-    console.log(restaurant)
+    const restaurantComments = this.props.comments[id] || []
     return (
       <div className='single'>
         <Restaurant i={i} restaurant={restaurant} {...this.props} />
-        <Comments />
+        <Comments restaurantComments={restaurantComments} />
       </div>
     )
   }
