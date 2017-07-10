@@ -4,6 +4,7 @@
   "private": true,
   "proxy": "http://localhost:3001/",
   "dependencies": {
+    "react-scripts": "1.0.10",
     "es6-promise": "^4.1.1",
     "history": "^4.6.3",
     "isomorphic-fetch": "^2.2.1",
@@ -16,9 +17,6 @@
     "redux": "^3.7.1",
     "redux-persist": "^4.8.2",
     "redux-thunk": "^2.2.0"
-  },
-  "devDependencies": {
-    "react-scripts": "1.0.10"
   },
   "scripts": {
     "start": "react-scripts start",
