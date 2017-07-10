@@ -130,6 +130,6 @@ fabric.properties
 # Sonarlint plugin
 .idea/sonarlint
 
-/node_modules
-/client/node_modules
+/node_modules/
+/client/node_modules/
 .DS_Store*
