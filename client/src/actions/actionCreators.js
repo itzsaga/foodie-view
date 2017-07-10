@@ -23,7 +23,7 @@ function removeComment (id, i) {
 function fetchPlaces () {
   return (dispatch) => {
     dispatch({type: 'FETCH_PLACES'})
-    return fetch('http://localhost:3001/api/places')
+    return fetch('api/places')
       .then(response => {
         response.json()
         .then(json => {
