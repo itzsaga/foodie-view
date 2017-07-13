@@ -1,7 +1,7 @@
 {
   "name": "foodie-view",
   "engines": {
-    "node": "7.10.0"
+    "node": "7.10.1"
   },
   "scripts": {
     "build": "cd client && npm install && npm run build && cd ..",
