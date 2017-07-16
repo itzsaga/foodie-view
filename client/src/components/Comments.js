@@ -1,8 +1,8 @@
 // TODO: Implement removeComment button.
 
-import React from 'react'
+import React, { Component } from 'react'
 
-class Comments extends React.Component {
+class Comments extends Component {
   handleSubmit = (e) => {
     e.preventDefault()
     const { id } = this.props.match.params
