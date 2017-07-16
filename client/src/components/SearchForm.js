@@ -11,6 +11,13 @@ export default class SearchForm extends Component {
     }
   }
 
+  handleChange = e => {
+    this.setState({
+      name: e.target.name,
+      zip_code: e.target.zip_code
+    })
+  }
+
   render () {
     return (
       <form onSubmit={this.handleSubmit}>
@@ -18,7 +25,7 @@ export default class SearchForm extends Component {
           <label>
             Name:
           </label>
-          <input id='restaurant-name'
+          <input id='name'
             type='text'
             name='name'
             value={this.state.name}
@@ -29,7 +36,7 @@ export default class SearchForm extends Component {
           <label>
             Zip Code:
           </label>
-          <input id='restaurant-zip_code'
+          <input id='zip_code'
             type='number'
             name='zip_code'
             value={this.state.zip_code}
