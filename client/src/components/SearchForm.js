@@ -18,6 +18,11 @@ export default class SearchForm extends Component {
     })
   }
 
+  handleSubmit = e => {
+    e.preventDefault()
+
+  }
+
   render () {
     return (
       <form onSubmit={this.handleSubmit}>
