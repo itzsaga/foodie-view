@@ -9,10 +9,11 @@ import createHistory from 'history/createBrowserHistory'
 import thunk from 'redux-thunk'
 
 // Components
-import App from './components/App'
+import App from './containers/App'
 import Home from './components/Home'
-import RestaurantList from './components/RestaurantList'
+import RestaurantList from './containers/RestaurantList'
 import Single from './components/Single'
+import NewRestaurantForm from './components/NewRestaurantForm'
 
 // Reducer
 import rootReducer from './reducers/index'
@@ -38,6 +39,7 @@ render(
       <App>
         <Route exact path='/' component={Home} />
         <Route exact path='/restaurants' component={RestaurantList} />
+        {/*<Route exact path='/restaurant/new' component={NewRestaurantForm} />*/}
         <Route exact path='/restaurants/:id' component={Single} />
       </App>
     </Router>

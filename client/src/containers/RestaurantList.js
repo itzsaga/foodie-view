@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 import { withRouter } from 'react-router-dom'
 import * as actionCreators from '../actions/actionCreators'
 
-import Restaurant from './Restaurant'
+import Restaurant from '../components/Restaurant'
 
 class RestaurantList extends Component {
   render () {

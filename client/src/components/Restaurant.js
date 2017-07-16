@@ -27,7 +27,6 @@ export default (props) => {
   } else {
     show = <p>Loading...</p>
   }
-  console.log(restaurant)
   return (
     <figure className='grid-figure'>
       {show}
