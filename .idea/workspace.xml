@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="511934b0-0892-4450-96f3-c150debd7b2a" name="Default" comment="R">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/components/SearchForm.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/index.js" afterPath="$PROJECT_DIR$/client/src/index.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,32 +30,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="actionCreators.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/actions/actionCreators.js">
+      <file leaf-file-name="SearchForm.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/src/components/SearchForm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="28" column="23" lean-forward="false" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NewRestaurantForm.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/components/NewRestaurantForm.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="616">
-              <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/src/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="42" column="66" lean-forward="true" selection-start-line="42" selection-start-column="66" selection-end-line="42" selection-end-column="66" />
-              <folding />
+            <state relative-caret-position="112">
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -69,8 +51,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/lib/tasks/start.rake" />
         <option value="$PROJECT_DIR$/client/src/registerServiceWorker.js" />
         <option value="$PROJECT_DIR$/client/src/App.test.js" />
@@ -94,7 +74,6 @@
         <option value="$PROJECT_DIR$/client/src/styles/css.css" />
         <option value="$PROJECT_DIR$/client/src/components/Comment.js" />
         <option value="$PROJECT_DIR$/client/src/reducers/comments.js" />
-        <option value="$PROJECT_DIR$/client/src/components/Comments.js" />
         <option value="$PROJECT_DIR$/db/migrate/20170704034052_place.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20170704034052_places.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20170704034124_comments.rb" />
@@ -112,7 +91,6 @@
         <option value="$PROJECT_DIR$/client/src/reducers/places.js" />
         <option value="$PROJECT_DIR$/client/src/components/App.js" />
         <option value="$PROJECT_DIR$/client/src/components/RestaurantList.js" />
-        <option value="$PROJECT_DIR$/client/src/components/Restaurant.js" />
         <option value="$PROJECT_DIR$/client/src/components/Single.js" />
         <option value="$PROJECT_DIR$/CONTRIBUTING.md" />
         <option value="$PROJECT_DIR$/lib/tasks/install.rake" />
@@ -120,6 +98,10 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/client/src/components/NewRestaurantForm.js" />
         <option value="$PROJECT_DIR$/client/src/index.js" />
+        <option value="$PROJECT_DIR$/client/src/components/Restaurant.js" />
+        <option value="$PROJECT_DIR$/client/src/containers/RestaurantList.js" />
+        <option value="$PROJECT_DIR$/client/src/components/SearchForm.js" />
+        <option value="$PROJECT_DIR$/client/src/components/Comments.js" />
       </list>
     </option>
   </component>
@@ -224,6 +206,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="containers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="foodie-view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="foodie-view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -254,6 +258,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/src/containers" />
       <recent name="$PROJECT_DIR$/lib/tasks" />
       <recent name="$PROJECT_DIR$/client/src" />
     </key>
@@ -600,13 +605,6 @@
       <workItem from="1499285433967" duration="927000" />
       <workItem from="1499367173852" duration="3863000" />
     </task>
-    <task id="LOCAL-00032" summary="Fleshed out Restaurant component some.">
-      <created>1499121408811</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1499121408811</updated>
-    </task>
     <task id="LOCAL-00033" summary="Added normalize.css.">
       <created>1499121611419</created>
       <option name="number" value="00033" />
@@ -943,11 +941,18 @@
       <option name="project" value="LOCAL" />
       <updated>1499193450621</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="Updated syntax.">
+      <created>1500237346981</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1500237346981</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65229000" />
+    <option name="totallyTimeSpent" value="65614000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -967,17 +972,18 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44685242" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27863777" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929292" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.250774" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34365326" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929292" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34949496" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28282827" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
@@ -986,7 +992,6 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1042,7 +1047,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Styling." />
     <MESSAGE value="Redux Thunk WIP." />
     <MESSAGE value="Initial DB migrations and seeding." />
     <MESSAGE value="DB seeds." />
@@ -1067,7 +1071,8 @@
     <MESSAGE value="Added withRouter back into RestaurantList." />
     <MESSAGE value="Added withRouter &amp; got Single to render properly." />
     <MESSAGE value="Fixed Loading... condition for Single." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed Loading... condition for Single." />
+    <MESSAGE value="Updated syntax." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated syntax." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1076,16 +1081,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/App.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
@@ -1259,39 +1254,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/actions/actionCreators.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="28" column="23" lean-forward="false" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/reducers/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
           <caret line="8" column="9" lean-forward="false" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/Comments.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="9" column="27" lean-forward="false" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/RestaurantList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="15" column="34" lean-forward="true" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/Restaurant.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="896">
-          <caret line="32" column="12" lean-forward="false" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -1330,39 +1296,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/Single.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1204">
-          <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/Home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/schema.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="546">
           <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="31" column="76" lean-forward="false" selection-start-line="31" selection-start-column="76" selection-end-line="31" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/NewRestaurantForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
           <folding />
         </state>
       </provider>
@@ -1372,6 +1309,82 @@
         <state relative-caret-position="336">
           <caret line="42" column="66" lean-forward="true" selection-start-line="42" selection-start-column="66" selection-end-line="42" selection-end-column="66" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/actions/actionCreators.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="28" column="23" lean-forward="false" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/containers/RestaurantList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-129">
+          <caret line="15" column="34" lean-forward="true" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/containers/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/Single.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/Comments.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-555">
+          <caret line="4" column="34" lean-forward="true" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/Home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/NewRestaurantForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/Restaurant.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="28" column="3" lean-forward="false" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/SearchForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
