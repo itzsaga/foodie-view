@@ -13,7 +13,7 @@ import App from './containers/App'
 import Home from './components/Home'
 import RestaurantList from './containers/RestaurantList'
 import Single from './components/Single'
-import NewRestaurantForm from './components/NewRestaurantForm'
+import SearchForm from './components/SearchForm'
 
 // Reducer
 import rootReducer from './reducers/index'
@@ -37,9 +37,9 @@ render(
   <Provider store={store}>
     <Router history={history}>
       <App>
+        <Route path='/' component={SearchForm} />
         <Route exact path='/' component={Home} />
         <Route exact path='/restaurants' component={RestaurantList} />
-        {/*<Route exact path='/restaurant/new' component={NewRestaurantForm} />*/}
         <Route exact path='/restaurants/:id' component={Single} />
       </App>
     </Router>
