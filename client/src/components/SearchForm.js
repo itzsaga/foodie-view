@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import * as actionCreators from '../actions/actionCreators'
+// import * as actionCreators from '../actions/actionCreators'
 
 export default class SearchForm extends Component {
   constructor () {
@@ -9,12 +9,17 @@ export default class SearchForm extends Component {
       name: '',
       zip_code: ''
     }
+
+    this.handleChange = this.handleChange.bind(this)
+    this.handleSubmit = this.handleSubmit.bind(this)
   }
 
   handleChange = e => {
+    const target = e.target
+    const value = target.value
+    const name = target.name
     this.setState({
-      name: e.target.name,
-      zip_code: e.target.zip_code
+      [name]: value
     })
   }
 
@@ -35,21 +40,19 @@ export default class SearchForm extends Component {
             name='name'
             value={this.state.name}
             onChange={this.handleChange}
-            required />
-        </div>
-        <div>
+            required
+          />
           <label>
-            Zip Code:
+            5 Digit Zip Code:
           </label>
           <input id='zip_code'
-            type='number'
+            type='text'
             name='zip_code'
             value={this.state.zip_code}
             onChange={this.handleChange}
             pattern='[0-9]{5}'
-            required />
-        </div>
-        <div>
+            required
+          />
           <button type='submit'>Search</button>
         </div>
       </form>
