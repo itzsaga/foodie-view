@@ -43,7 +43,19 @@ function fetchYelp (zip_code, name) {
   }
   return (dispatch) => {
     dispatch({type: 'FETCH_YELP'})
-    return fetch(`https://api.yelp.com/v3/businesses/search?location=${zip_code}&term=${name}`)
+    return fetch(`https://api.yelp.com/v3/businesses/search?location=${zip_code}&term=${name}`, {
+      method: 'GET',
+      headers: yelpHeaders
+    })
+      .then(response => {
+        response.json()
+        .then(json => {
+          dispatch({type: 'RECEIVED_YELP_PLACES', payload: json})
+        })
+      })
+      .catch((err) => {
+        dispatch({type: 'FETCH_YELP_PLACES_ERROR', payload: err})
+      })
   }
 }
 
