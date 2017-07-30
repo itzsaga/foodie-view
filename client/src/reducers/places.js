@@ -9,6 +9,15 @@ export default function places (state = [], action) {
         ...state,
         restaurants: action.payload
       }
+    case 'FETCH_YELP':
+      return state
+    case 'FETCH_YELP_PLACES_ERROR':
+      return { ...state, error: action.payload }
+    case 'RECEIVED_YELP_PLACES':
+      return {
+        ...state,
+        restaurants: action.payload
+      }
     default:
       return state
   }

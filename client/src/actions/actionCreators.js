@@ -50,6 +50,7 @@ function fetchYelp (zip_code, name) {
       .then(response => {
         response.json()
         .then(json => {
+          console.log(json)
           dispatch({type: 'RECEIVED_YELP_PLACES', payload: json})
         })
       })
