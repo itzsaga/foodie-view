@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import * as actionCreators from '../actions/actionCreators'
-import { fetchYelp } from '../actions/actionCreators'
+// import { fetchYelp } from '../actions/actionCreators'
 
 export default class SearchForm extends Component {
   constructor () {
@@ -28,7 +28,7 @@ export default class SearchForm extends Component {
     e.preventDefault()
     const zip_code = this.state.zip_code
     const name = this.state.name
-    fetchYelp(zip_code, name)
+    this.props.actionCreators.fetchYelp(zip_code, name)
   }
 
   render () {
