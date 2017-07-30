@@ -37,13 +37,13 @@ function fetchPlaces () {
 }
 
 // fetch Yelp places
-function fetchYelp () {
+function fetchYelp (zip_code, name) {
   const yelpHeaders = {
     'Authorization': 'Bearer EakxldXP-2T72QO6NEvyqojjbrKHztRqEm2eHaa_QPSMPYM08QaY-yoYp0SsHzfPb1Sc7GBUPUleAa0ysHr0iNwafFC476KssKf8c8lVwc2kZy4oPle4vewxu0xYWXYx'
   }
   return (dispatch) => {
     dispatch({type: 'FETCH_YELP'})
-
+    return fetch(`https://api.yelp.com/v3/businesses/search?location=${zip_code}&term=${name}`)
   }
 }
 
