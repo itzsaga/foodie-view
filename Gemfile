@@ -9,7 +9,7 @@ ruby '2.4.1'
 gem 'rails', '~> 5.1.1'
 gem 'foreman'
 gem 'pg', '~> 0.18'
-gem 'puma', '~> 3.12'
+gem 'puma', '~> 4.3'
 gem 'rack-cors', :require => 'rack/cors'
 
 group :development, :test do
